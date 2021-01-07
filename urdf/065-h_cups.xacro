@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<robot name="065-h_cups" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <link name="065-h_cups_link">
+    <visual>
+      <geometry>
+	      <mesh filename="package://data_generation/meshes/065-h_cups/textured.dae"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://data_generation/meshes/065-h_cups/textured.dae"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <contact_coefficients mu="1" kp="10.0" kd="10.0"/>
+    </collision>
+    <inertial>
+      <mass value="0.2"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </inertial>
+  </link>
+</robot>

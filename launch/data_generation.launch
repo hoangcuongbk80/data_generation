@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="data_generator" pkg="data_generation" type="data_generation_node" cwd="node">
+  
+  <param name="debug" value="true"/>
+
+  <param name="depth_topsub" value="/asus/depth/image_raw"/>
+  <param name="rgb_topsub" value="/asus/color/image_raw"/>
+  <param name="cloud_topsub" value="/asus/depth/points"/>
+  <param name="cloud_toppub" value="/data_generation/mypoints"/>
+
+  <param name="data_dir" value="$(find data_generation)/data/"/>
+  <param name="saved_rgb_dir" value="$(find data_generation)/data/rgb.png"/>
+  <param name="saved_depth_dir" value="$(find data_generation)/data/depth.png"/>
+  <param name="saved_points_dir" value="$(find data_generation)/data/points.ply"/>
+  
+  <param name="optical_frame_id" value="asus_rgb_optical_frame"/>
+  <param name="table_height" value="0.7"/>
+
+  <param name="fx" value="581.8"/>
+  <param name="fy" value="581.5"/>
+  <param name="cx" value="319.0"/>
+  <param name="cy" value="237.3"/>
+  <param name="downsample" value="0.005"/>
+  <param name="neighbor_dist" value="0.05"/>
+  <param name="ground_dist" value="0.002"/>
+  <param name="depth_factor" value="1000"/>
+
+  </node>
+  
+</launch>

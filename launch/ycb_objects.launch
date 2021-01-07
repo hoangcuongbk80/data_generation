@@ -1,0 +1,125 @@
+<launch>
+
+  <include file="$(find data_generation)/launch/cambot_world.launch"/>
+
+  <!-- object 1 -->
+  <group ns="object1_can">
+  <param name="tf_prefix" value="object1_can" />
+    <include file="$(find data_generation)/launch/007_tuna_fish_can.launch" >
+  	<arg name="pose_x" value="-0.2"/> 
+  	<arg name="pose_y" value="-0.2"/>
+	<arg name="pose_z" value="0.0"/>
+	<arg name="pose_yaw" default="0.0"/>
+	<arg name="name" value="object1_can" />
+    </include>
+  </group>
+
+  <!-- object 2 -->
+  <group ns="object2_box">
+  <param name="tf_prefix" value="object2_box" />
+    <include file="$(find data_generation)/launch/008_pudding_box.launch" >
+  	<arg name="pose_x" value="-0.2"/> 
+  	<arg name="pose_y" value="0.0"/>
+	<arg name="pose_z" value="0.0"/>
+	<arg name="pose_yaw" default="0.0"/>
+	<arg name="name" value="object2_box" />
+    </include>
+  </group>
+
+  <!-- object 3 -->
+  <group ns="object3_banana">
+  <param name="tf_prefix" value="object3_banana" />
+    <include file="$(find data_generation)/launch/011_banana.launch" >
+  	<arg name="pose_x" value="-0.2"/> 
+  	<arg name="pose_y" value="0.2"/>
+	<arg name="pose_z" value="0.0"/>
+	<arg name="pose_yaw" default="0.0"/>
+	<arg name="name" value="object3_banana" />
+    </include>
+  </group>
+
+  <!-- object 4 -->
+  <group ns="object4_bowl">
+  <param name="tf_prefix" value="object4_bowl" />
+    <include file="$(find data_generation)/launch/024_bowl.launch" >
+  	<arg name="pose_x" value="0.0"/>
+  	<arg name="pose_y" value="-0.2"/>
+	<arg name="pose_z" value="0.0"/>
+	<arg name="pose_yaw" default="0.0"/>
+	<arg name="name" value="object4_bowl" />
+    </include>
+  </group>
+
+  <!-- object 5 -->
+  <group ns="object5_mug">
+  <param name="tf_prefix" value="object5_mug" />
+    <include file="$(find data_generation)/launch/025_mug.launch" >
+  	<arg name="pose_x" value="0.0"/> 
+  	<arg name="pose_y" value="0.0"/>
+	<arg name="pose_z" value="0.0"/>
+	<arg name="pose_yaw" default="0.0"/>
+	<arg name="name" value="object5_mug" />
+    </include>
+  </group>
+
+  <!-- object 6 -->
+  <group ns="object6_screwdriver">
+  <param name="tf_prefix" value="object6_screwdriver" />
+    <include file="$(find data_generation)/launch/044_flat_screwdriver.launch" >
+  	<arg name="pose_x" value="0.0"/> 
+  	<arg name="pose_y" value="0.5"/>
+	<arg name="pose_z" value="0.0"/>
+	<arg name="pose_yaw" default="0.0"/>
+	<arg name="name" value="object6_screwdriver" />
+    </include>
+  </group>
+
+  <!-- object 7 -->
+  <group ns="object7_clamp">
+  <param name="tf_prefix" value="object7_clamp" />
+    <include file="$(find data_generation)/launch/051_large_clamp.launch" >
+  	<arg name="pose_x" value="0.2"/> 
+  	<arg name="pose_y" value="-0.2"/>
+	<arg name="pose_z" value="0.0"/>
+	<arg name="pose_yaw" default="0.0"/>
+	<arg name="name" value="object7_clamp" />
+    </include>
+  </group>
+
+  <!-- object 8 -->
+  <group ns="object8_baseball">
+  <param name="tf_prefix" value="object8_baseball" />
+    <include file="$(find data_generation)/launch/055_baseball.launch" >
+  	<arg name="pose_x" value="0.2"/> 
+  	<arg name="pose_y" value="0.0"/>
+	<arg name="pose_z" value="0.0"/>
+	<arg name="pose_yaw" default="0.0"/>
+	<arg name="name" value="object8_baseball" />
+    </include>
+  </group>
+
+  <!-- object 9 -->
+  <group ns="object9_brick">
+  <param name="tf_prefix" value="object9_brick" />
+    <include file="$(find data_generation)/launch/061_foam_brick.launch" >
+  	<arg name="pose_x" value="0.2"/> 
+  	<arg name="pose_y" value="0.2"/>
+	<arg name="pose_z" value="0.0"/>
+	<arg name="pose_yaw" default="0.0"/>
+	<arg name="name" value="object9_brick" />
+    </include>
+  </group>
+
+  <!-- object 10 -->
+  <group ns="object10_cup">
+  <param name="tf_prefix" value="object10_cup" />
+    <include file="$(find data_generation)/launch/065-h_cups.launch" >
+  	<arg name="pose_x" value="0.35"/> 
+  	<arg name="pose_y" value="-0.35"/>
+	<arg name="pose_z" value="0.0"/>
+	<arg name="pose_yaw" default="0.0"/>
+	<arg name="name" value="object10_cup" />
+    </include>
+  </group>
+
+</launch>
